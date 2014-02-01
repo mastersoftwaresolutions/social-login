@@ -1,0 +1,11 @@
+<?php
+session_start();
+session_destroy();
+//unset($_SESSION['twid']);
+//unset($_SESSION['oauth_token_secret']);
+unset($_SESSION['data']);
+//print_r($_SESSION);
+if(!isset($_SESSION['data'])){
+header('location:http://enochsystems.mastersoftwaresolutionsindia.com/Social-login/loginfb.php');
+}
+?>

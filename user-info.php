@@ -1,0 +1,13 @@
+<?php
+session_start();
+//$data=$_REQUEST['data'];
+$_SESSION=array();
+if(isset($_REQUEST['twuserid'])){
+$twid=$_REQUEST['twuserid'];
+$twid=$_REQUEST['twname'];
+$twid=$_REQUEST['tescname'];
+print_r($_REQUEST);
+}
+$_SESSION['data']=json_decode($_REQUEST['data']);
+print_r($_SESSION);
+?>
